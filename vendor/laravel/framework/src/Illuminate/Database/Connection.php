@@ -825,10 +825,6 @@ class Connection implements ConnectionInterface
                     $this->getName(), $query, $this->prepareBindings($bindings), $e
                 );
             }
-
-            throw new QueryException(
-                $this->getName(), $query, $this->prepareBindings($bindings), $e
-            );
         }
     }
 
